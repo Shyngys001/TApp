@@ -1,0 +1,232 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100vh;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.firstBlock {
+    height: 479px;
+    background: #88CFFF;
+
+}
+.header {
+    display: flex;
+    margin-left: 42%;
+    align-items: center;
+}
+.rating {
+    margin-right: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ratingSum {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.firstGroup {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+}
+.top1 {
+    position: absolute;
+    left: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top1Sum {
+    position: absolute;
+    right: 460px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.secondGroup {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+}
+.top2 {
+    position: absolute;
+    left: 300px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top2Sum {
+    position: absolute;
+    right: 460px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.top1Name{
+    position: absolute;
+    left: 500px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.top2Name{
+    position: absolute;
+    left: 500px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.artka{
+    display: flex;
+    position: absolute;
+    left: 30px;
+    align-items: center;
+}
+.mazir{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(228, 242, 249, 0.63);
+}
+
+.secondBlock{
+    margin-top: -100px;
+    height: 200px;
+    background: url('../img/cloud1.svg') repeat-x;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.raund {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.slesh {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+.game {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.groupName{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #FFA500;
+    border-radius: 52px;
+    width: 437px;
+    height: 87px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/play.css">
+    <title>Баптаулар</title>
+    <script defer src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+  </head>
+  <body onload="forward()">
+
+
+
+  <div class="im">
+      <a href="index.html">
+        <img class="ima" src="img/prev.png" alt="">
+      </a>
+   </div>  
+   <label class="switch">
+    <input id="myCheckbox" type="checkbox">
+    <span class="slider round"></span>
+  </label>
+    <h1 class="" style="
+    background-image: linear-gradient(90deg, #F0B64D 1.98%, #D778B3 43.89%, #5E6BF5 87.36%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 50px;
+   ">Баптаулар</h1>
+          <label for="sozder">Сөз саны: <span id="sozder-value" style="background-image: linear-gradient(90deg, orangered, yellow);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;">10</span></label>
+          <input type="range" id="sozder" name="sozder" min="1" max="100" value="10">
+
+
+          <label for="time">Уақыт мөлшері: <span id="time-value" style="background-image: linear-gradient(90deg, orangered, yellow);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;">60 секунд</span></label>
+          <input type="range" id="time" name="time" min="30" max="120" value="60">
+
+  <br><br>
+        <div class="pun">
+            <p style="color: rgb(0, 0, 0); font-size: 22px;">Өткізгенге жаза</p>
+            <label class="switch" for="punishment">
+                <input id="punishment" name="punishment" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <br><br>
+        <button id="save" style="background-image: linear-gradient(90deg, orangered, yellow);
+        color: black;">Алға</button>
+        <script>
+        const saveBtn = document.querySelector('#save');
+        const sozderInput = document.querySelector('#sozder');
+        const timeInput = document.querySelector('#time');
+        const sozderValue = document.querySelector('#sozder-value');
+        const timeValue = document.querySelector('#time-value');
+        const punishmentInput = document.querySelector('#punishment');
+
+        sozderInput.addEventListener('input', () => {
+            sozderValue.innerText = sozderInput.value;
+        });
+
+        timeInput.addEventListener('input', () => {
+          timeValue.innerHTML = timeInput.value + ' секунд';
+        })
+
+        saveBtn.addEventListener('click', () => {
+            localStorage.setItem('punishment', punishmentInput.checked);
+            sessionStorage.setItem('sozder', sozderInput.value);
+            sessionStorage.setItem('time', timeInput.value)
+
+            window.location.href = 'rating.html';
+        });
+
+
+        sessionStorage.setItem('flip', 'group1')
+        sessionStorage.setItem('score1', '0');
+        sessionStorage.setItem('score2', '0');
+        sessionStorage.setItem('index', '0')
+
+        </script>
+
+
+  </body>
+</html>

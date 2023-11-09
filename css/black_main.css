@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../dark_img/mainpage3.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.back{
+    background: url(../dark_img/whiteback.png) ;
+    height: 270px;
+    width: 1540px;
+    position: absolute;
+    z-index: -1;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 280px;
+    margin-top: 320px;
+    width: 145px;
+    height: 145px;
+}
+.logoback1, .logoback2{
+    background: url(../dark_img/littlewave1.png);
+    width: 700px;
+    height: 115px;
+    position: absolute;
+    top: 250px;
+    /* left: 0px; */
+    z-index: -1;
+}
+.logoback1{
+    /* top: 220px; */
+    left: 0px;
+}
+.logoback2{
+    right: 0;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    /* height: 47px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    row-gap: 20px;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 47px;
+    background: #2F67A4;
+    border-radius: 52px;
+    border: none;
+    /* box-shadow: 0px 1px 3px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btns a:nth-child(1) .btn{
+    background: #a09f9f;
+}
+.btns a{
+    text-decoration: none;
+}

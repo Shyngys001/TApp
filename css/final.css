@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #88cfff; */
+    /* overflow: hidden; */
+}
+.blueback{
+    background: url('../img/blue.png');
+    height: 450px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.logoback1, .logoback2{
+    background: url(../img/littlewave1.png);
+    width: 100vw;
+    height: 115px;
+    position: absolute;
+    top: 420px;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+.logoback1{
+    left: 0px;
+}
+.logoback2{
+    right: 0;
+}
+.btn{
+    position: absolute;
+    bottom: 15px;
+    left: 41.5%;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 47px;
+    background: #FFA500;
+    border-radius: 52px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.block .ratingImg img{
+    display: block;
+    margin: 0 auto;
+    line-height: 0;
+}
+.block p{
+    margin-top: 18px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 0;
+}
+
+.group{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 122px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}

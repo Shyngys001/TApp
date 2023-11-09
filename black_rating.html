@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/black_rating.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rating</title>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      
+      h1 {
+        color: #1c1c1c;
+        font-size: 48px;
+        margin-top: 100px;
+      }
+      
+      span {
+        color: #007bff;
+        font-size: 72px;
+        font-weight: bold;
+        text-shadow: 2px 2px #d9d9d9;
+      }
+      
+      button {
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+        margin-top: 50px;
+        padding: 16px 32px;
+        transition: background-color 0.3s;
+      }
+      
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <script src="./script/script.js"></script>
+  </head>
+  <body onload="setGroupName()">
+
+
+<div class="firstBlock">
+    <div class="header">
+        <a href="black_main.html">
+            <div class="artka"> 
+            <a href="black_main.html" class="back"><img src="img/back.png" alt=""></a>
+            <a href="black_main.html" class="mazir">мәзір</a>
+            </div>
+        </a>
+        <h1 class="black_rating">Рейтинг</h1>
+        <div class="block">
+            <div class="ratingImg">
+                <img src="./img/crown.svg" alt="" width="50px" height="50px">
+            </div>
+            <p class="ratingSum"><span id="score"></span></p>
+        </div>
+    </div>
+
+    <div class="firstGroup">
+        <p class="top1">Топ 1:</p>
+        <p class="top1Name"></p>
+        <p class="top1Sum"></p>
+    </div>
+    <div class="secondGroup">
+        <p class="top2">Топ 2:</p>
+        <p class="top2Name"></p>
+        <p class="top2Sum"></p>
+    </div>
+</div> 
+
+<div class="secondBlock"></div>
+
+<!-- <div class="groupName">Ұландар</div> -->
+<div class="start">
+    <a href="play.html"><button class="button">Ойынды бастау</button></a>
+</div>
+<!-- <h1>Жинаған балл: <span id="score"></span></h1> -->
+    <!-- <button onclick="window.location.href='play.html'">Play Again</button> -->
+    <script>
+        fetch('words.txt')
+          .then(response => response.text())
+          .then(content => {
+            const words = content.split('\n');
+            const scoreEl = document.querySelector('#score');
+            const score = sessionStorage.getItem('sozder');
+
+            const formattedScore = ` ${score}`;
+            scoreEl.textContent = formattedScore;
+            localStorage.clear();
+          })
+          .catch(error => console.error(error));
+      </script>
+
+<p style="visibility: hidden;">bottom</p>
+  </body>
+<style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #1c1c1c;
+      font-size: 48px;
+      margin-top: 100px;
+    }
+    
+    span {
+      color: #007bff;
+      font-size: 72px;
+      font-weight: bold;
+      text-shadow: 2px 2px #d9d9d9;
+    }
+    
+    button {
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 24px;
+      margin-top: 50px;
+      padding: 16px 32px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+
+</html>

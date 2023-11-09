@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #88cfff;
+    overflow: hidden;
+}
+.back{
+    background: url(../img/whiteback.png) ;
+    height: 150px;
+    width: 1540px;
+    position: absolute;
+    z-index: -1;
+}
+.artjaq{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    display: flex;
+}
+.artjaq .back_word{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    
+}
+.artjaq .image {
+    display: flex;
+    align-items: center;
+}
+.space{
+    padding-top: 15px;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+.logoback1, .logoback2{
+    background: url(../img/littlewave1.png);
+    width: 700px;
+    height: 115px;
+    position: absolute;
+    top: 120px;
+    z-index: -1;
+}
+.logoback1{
+    left: 0px;
+}
+.logoback2{
+    right: 0;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: 37px;
+    background: #FFA500;
+    border-radius: 52px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2.5px 1.5px 5px rgba(0, 0, 0, 0.48);
+}
+.descr{
+    margin-top: 64px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    padding-left: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+}
+.descr .wrapper{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+.descr .wrapper img{
+    position: absolute;
+    left: -10px;
+    top: 5px;
+}
+.descr .wrapper div{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.descr .wrapper:nth-child(1) img{
+    left: -10px;
+    top: 10px;
+}
+.descr .wrapper:nth-child(2) img{
+    left: -13px;
+    top: 10px;
+}
+.descr .wrapper:nth-child(3) img{
+    left: -10px;
+    top: 10px;
+}
+.descr .wrapper:nth-child(4) img{
+    left: -10px;
+    top: 0px;
+}

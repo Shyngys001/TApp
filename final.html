@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner</title>
+    <link rel="stylesheet" href="css/final.css">
+    <script>
+        function setWinner() {
+            let score1 = sessionStorage.getItem("score1");
+            let score2 = sessionStorage.getItem("score2");
+            let winnerGroup = document.querySelector('.group');
+            let scoreWinner = document.querySelector('#score');
+            if(score1 > score2) {
+                winnerGroup.innerHTML = sessionStorage.getItem('top1');
+                scoreWinner.innerHTML = score1;
+            } else {
+                winnerGroup.innerHTML = sessionStorage.getItem('top2');
+                scoreWinner.innerHTML = score2;
+            }
+            sessionStorage.clear();
+        }
+    </script>
+</head>
+<body onload="setWinner()">
+    <div class="blueback"></div>
+    <div class="title">Жеңімпаз</div>
+    <div class="block">
+        <div class="ratingImg">
+            <img src="./img/crown.svg" alt="" width="50px" height="50px">
+        </div>
+        <p class="ratingSum"><span id="score"></span></p>
+    </div>
+    <div class="group"></div>
+    <div>
+        <div class="logoback1"></div> 
+        <div class="logoback2"></div> 
+    </div>
+    <a href="index.html"><button class="btn">Ойынды аяқтау</button></a>
+</body>
+</html>
